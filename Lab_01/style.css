@@ -1,0 +1,142 @@
+html {
+  background-color: #f3e8df;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  color: #333333;
+}
+
+h1 {
+  color: #49352a;
+}
+
+.home {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.exercise-list li {
+  margin-bottom: 15px;
+}
+
+.exercise-list a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-1 {
+  color: #c0392b;
+}
+
+.link-2 {
+  color: #2471a3;
+}
+
+.link-3 {
+  color: #218838;
+}
+
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.author {
+  color: #b34726;
+  font-weight: bold;
+}
+
+.article-image {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin-top: 25px;
+}
+
+.products-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.products {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.products th,
+.products td {
+  border: 1px solid #555555;
+  padding: 12px;
+  text-align: left;
+}
+
+.products th {
+  background-color: #d6a58b;
+}
+
+.squares-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.squares {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 220px;
+}
+
+.squares {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+@media (max-width: 500px) {
+  body {
+    padding: 20px;
+  }
+
+  .products {
+    font-size: 12px;
+  }
+
+  .products th,
+  .products td {
+    padding: 6px;
+  }
+}

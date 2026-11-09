@@ -10,52 +10,136 @@
   <body>
     <header>
       <a class="logo" href="index.html">✦ Magiczny Świat</a>
+
       <nav>
         <a href="index.html">Home</a>
         <a href="galeria.html">Galeria</a>
         <a href="kontakt.html">Kontakt</a>
       </nav>
+
+      <button id="theme-toggle" class="theme-button" type="button">
+        ☀ Jasny motyw
+      </button>
     </header>
 
     <main>
+      <!-- Główna sekcja -->
       <section class="hero">
         <p class="eyebrow">Świat pełen magii</p>
         <h1>Witaj w świecie<br />Harry’ego Pottera</h1>
+
         <p>
-          Odkryj Hogwart, poznaj magiczne stworzenia i przeżyj przygodę razem z
-          młodymi czarodziejami.
+          Odkryj Hogwart, poznaj magiczne stworzenia i przeżyj niezwykłą
+          przygodę razem z młodymi czarodziejami.
         </p>
+
         <a class="button" href="galeria.html">Odkryj galerię →</a>
       </section>
 
+      <!-- Informacje o Hogwarcie -->
       <section class="content">
         <h2>Witaj w Hogwarcie!</h2>
+
         <p>
           Hogwart to niezwykła szkoła magii i czarodziejstwa. Uczniowie uczą się
-          tam zaklęć, warzenia eliksirów i poznają tajemnice magicznego świata.
+          tam zaklęć, warzenia eliksirów, obrony przed czarną magią i poznają
+          tajemnice magicznego świata.
+        </p>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <span class="info-icon">🏰</span>
+            <h3>Zamek Hogwart</h3>
+            <p>
+              Starożytny zamek pełen tajemniczych korytarzy, ruchomych schodów i
+              ukrytych pomieszczeń.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <span class="info-icon">🪄</span>
+            <h3>Magia i zaklęcia</h3>
+            <p>
+              Młodzi czarodzieje poznają zaklęcia, uczą się kontrolować magię i
+              rozwijają swoje umiejętności.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <span class="info-icon">🧪</span>
+            <h3>Eliksiry</h3>
+            <p>
+              Na lekcjach eliksirów uczniowie przygotowują magiczne mikstury
+              według specjalnych receptur.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Fakultety -->
+      <section class="content">
+        <h2>Cztery domy Hogwartu</h2>
+
+        <p>
+          Każdy uczeń zostaje przydzielony do jednego z czterech domów. Każdy z
+          nich ma własne wartości i tradycje.
         </p>
 
         <div class="cards">
-          <article class="card">
+          <article class="card gryffindor">
             <h3>Gryffindor</h3>
             <p>Odwaga, determinacja i gotowość do działania.</p>
           </article>
 
-          <article class="card">
+          <article class="card slytherin">
             <h3>Slytherin</h3>
             <p>Ambicja, spryt i dążenie do celu.</p>
           </article>
 
-          <article class="card">
+          <article class="card ravenclaw">
             <h3>Ravenclaw</h3>
             <p>Wiedza, mądrość i kreatywność.</p>
           </article>
 
-          <article class="card">
+          <article class="card hufflepuff">
             <h3>Hufflepuff</h3>
             <p>Lojalność, cierpliwość i sprawiedliwość.</p>
           </article>
         </div>
+      </section>
+
+      <!-- Tiara Przydziału (test) -->
+      <section class="interactive-section">
+        <h2>Tiara Przydziału</h2>
+        <p>Odpowiedz szczerze na 4 pytania, a Tiara wybierze Twój dom!</p>
+        <div id="sorting-quiz" class="quiz-box"></div>
+      </section>
+
+      <!-- Cytat -->
+      <section class="interactive-section quote-section">
+        <h2>Magiczna myśl</h2>
+
+        <blockquote id="quote">
+          „To nasze wybory pokazują, kim naprawdę jesteśmy”.
+        </blockquote>
+
+        <button id="quote-button" class="button" type="button">
+          Losuj cytat
+        </button>
+      </section>
+
+      <!-- Quiz -->
+      <section class="interactive-section">
+        <h2>Sprawdź swoją wiedzę!</h2>
+        <p>8 pytań o świat Harry’ego Pottera. Ile zdobędziesz punktów?</p>
+        <div id="quiz" class="quiz-box"></div>
+      </section>
+
+      <!-- Zegar -->
+      <section class="interactive-section">
+        <h2>Czas w świecie magii</h2>
+        <p>Aktualny czas:</p>
+        <div id="clock" class="clock">--:--:--</div>
       </section>
     </main>
 

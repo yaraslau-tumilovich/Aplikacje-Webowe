@@ -15,48 +15,188 @@
         <a href="galeria.html">Galeria</a>
         <a href="kontakt.html">Kontakt</a>
       </nav>
+      <button id="theme-toggle" class="theme-button" type="button">
+        ☀ Jasny motyw
+      </button>
     </header>
 
     <main class="content">
       <h1>Galeria magii</h1>
       <p>Poznaj niezwykłe miejsca i atmosferę świata magii.</p>
 
+      <div class="filters" role="group" aria-label="Filtry galerii">
+        <button class="filter-btn active" type="button" data-filter="all">
+          Wszystkie
+        </button>
+        <button class="filter-btn" type="button" data-filter="zamek">
+          Zamek
+        </button>
+        <button class="filter-btn" type="button" data-filter="domy">
+          Domy
+        </button>
+        <button class="filter-btn" type="button" data-filter="stworzenia">
+          Stworzenia
+        </button>
+        <button class="filter-btn" type="button" data-filter="sala">
+          Wielka Sala
+        </button>
+        <button class="filter-btn" type="button" data-filter="quidditch">
+          Quidditch
+        </button>
+      </div>
+
       <div class="gallery">
-        <img
-          src="https://zpopk.pl/wp-content/uploads/2015/04/harry-potter-castle-hogwarts-wallpapers-wallpaper.jpg"
-          alt="Zamek"
-        />
-        <img
-          src="https://external-preview.redd.it/harry-potter-hogwarts-houses-1920x1200-v0-zHexA8JTE24rK2F6o2oVJ0EuWaGYex3eptTQzWgzFQA.png?auto=webp&s=772285800572b86a39f3e095a0baf3e197e43bb5"
-          alt="wydziały"
-        />
-        <img
-          src="https://kremlinpalace.org/images/events/1709196272.jpg"
-          alt="Sowa"
-        />
-        <img
-          src="https://cdn.lifehacker.ru/wp-content/uploads/2026/10/w1500_57704616_1536x768_1792516283.jpg"
-          alt="Dinner room0"
-        />
-        <img
-          src="https://images4.alphacoders.com/130/thumb-1920-1308100.jpeg"
-          alt="Diner room"
-        />
-        <img
-          src="https://simplywallpaper.net/pictures/2010/10/02/Harry-Potter-Quidditch.jpg"
-          alt="Quidditch"
-        />
+        <figure
+          class="g-item"
+          data-category="zamek"
+          data-id="1"
+          data-desc="Starożytny zamek pełen tajemnic."
+        >
+          <img
+            src="https://zpopk.pl/wp-content/uploads/2015/04/harry-potter-castle-hogwarts-wallpapers-wallpaper.jpg"
+            alt="Zamek Hogwart"
+            loading="lazy"
+          />
+          <figcaption>
+            <span class="g-title">Zamek Hogwart</span>
+            <button
+              class="like-btn"
+              type="button"
+              aria-label="Polub: Zamek Hogwart"
+            >
+              ❤ <span>0</span>
+            </button>
+          </figcaption>
+        </figure>
+        <figure
+          class="g-item"
+          data-category="domy"
+          data-id="2"
+          data-desc="Gryffindor, Slytherin, Ravenclaw i Hufflepuff."
+        >
+          <img
+            src="https://external-preview.redd.it/harry-potter-hogwarts-houses-1920x1200-v0-zHexA8JTE24rK2F6o2oVJ0EuWaGYex3eptTQzWgzFQA.png?auto=webp&s=772285800572b86a39f3e095a0baf3e197e43bb5"
+            alt="Cztery domy"
+            loading="lazy"
+          />
+          <figcaption>
+            <span class="g-title">Cztery domy</span>
+            <button
+              class="like-btn"
+              type="button"
+              aria-label="Polub: Cztery domy"
+            >
+              ❤ <span>0</span>
+            </button>
+          </figcaption>
+        </figure>
+        <figure
+          class="g-item"
+          data-category="stworzenia"
+          data-id="3"
+          data-desc="Magiczna poczta w świecie czarodziejów."
+        >
+          <img
+            src="https://kremlinpalace.org/images/events/1709196272.jpg"
+            alt="Sowa pocztowa"
+            loading="lazy"
+          />
+          <figcaption>
+            <span class="g-title">Sowa pocztowa</span>
+            <button
+              class="like-btn"
+              type="button"
+              aria-label="Polub: Sowa pocztowa"
+            >
+              ❤ <span>0</span>
+            </button>
+          </figcaption>
+        </figure>
+        <figure
+          class="g-item"
+          data-category="sala"
+          data-id="4"
+          data-desc="Tu uczniowie jedzą posiłki i świętują."
+        >
+          <img
+            src="https://cdn.lifehacker.ru/wp-content/uploads/2026/10/w1500_57704616_1536x768_1792516283.jpg"
+            alt="Wielka Sala"
+            loading="lazy"
+          />
+          <figcaption>
+            <span class="g-title">Wielka Sala</span>
+            <button
+              class="like-btn"
+              type="button"
+              aria-label="Polub: Wielka Sala"
+            >
+              ❤ <span>0</span>
+            </button>
+          </figcaption>
+        </figure>
+        <figure
+          class="g-item"
+          data-category="sala"
+          data-id="5"
+          data-desc="Setki świec unoszą się pod sufitem."
+        >
+          <img
+            src="https://images4.alphacoders.com/130/thumb-1920-1308100.jpeg"
+            alt="Uczta w Hogwarcie"
+            loading="lazy"
+          />
+          <figcaption>
+            <span class="g-title">Uczta w Hogwarcie</span>
+            <button
+              class="like-btn"
+              type="button"
+              aria-label="Polub: Uczta w Hogwarcie"
+            >
+              ❤ <span>0</span>
+            </button>
+          </figcaption>
+        </figure>
+        <figure
+          class="g-item"
+          data-category="quidditch"
+          data-id="6"
+          data-desc="Najpopularniejszy sport czarodziejów."
+        >
+          <img
+            src="https://simplywallpaper.net/pictures/2010/10/02/Harry-Potter-Quidditch.jpg"
+            alt="Quidditch"
+            loading="lazy"
+          />
+          <figcaption>
+            <span class="g-title">Quidditch</span>
+            <button
+              class="like-btn"
+              type="button"
+              aria-label="Polub: Quidditch"
+            >
+              ❤ <span>0</span>
+            </button>
+          </figcaption>
+        </figure>
       </div>
 
       <section class="video-section">
         <h2>Magia na ekranie</h2>
         <div class="video">
           <iframe
-            src="https://www.youtube-nocookie.com/embed/VyHV0BRtd0Y"
-            title="Zwiastun filmu Harry Potter i Kamień Filozoficzny"
+            src="https://www.youtube-nocookie.com/embed/VyHV0BRtdxo"
+            title="Zwiastun filmu Harry Potter"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-          >
-          </iframe>
+          ></iframe>
         </div>
       </section>
     </main>
